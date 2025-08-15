@@ -2,9 +2,16 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import { BrowserRouter, Route, Routes } from "react-router-dom"
+import Streak from './components/Streak.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+  <BrowserRouter>
+  <Routes>
+    {/*parent route*/}
+      <Route path="/" element={<App />}></Route>
+      {/*child route*/}
+      <Route path="/streak" element={<Streak />}></Route>
+  </Routes>
+</BrowserRouter>
 )

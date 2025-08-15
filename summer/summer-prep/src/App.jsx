@@ -1,7 +1,6 @@
 import './App.css'
-import Calendar from './components/Calander'
+import Calendar from './components/Calendar'
 import Navbar from './components/Navbar'
-import PopUp from './components/popUp'
 
 function App() {
   return (
